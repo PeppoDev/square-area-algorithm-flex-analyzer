@@ -54,7 +54,6 @@ a*a
 {number}+    {
     printf("%s is a number\n", yytext);
     insert("number", yytext);
-
 }
 
 {operators} {
@@ -69,7 +68,6 @@ a*a
 {assignment} {
     printf("%s is a valid assignment\n", yytext);
     insert("assignment", yytext);
-
 }
 
 {not_valid_assignment} {
